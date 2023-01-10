@@ -1,5 +1,8 @@
-import { useLocation, useNavigate } from 'react-router-dom'
+import { useLocation, useNavigate, } from 'react-router-dom'
 import React from 'react'
+
+
+
 
 
 export default function Header() {
@@ -14,9 +17,9 @@ export default function Header() {
     }
   return (
     <div className='bg-white border-b shadow-md sticky top-0 z-50'>
-        <header className='flex justify-between items-center px-3 max-w-6xl mx-auto'>
+        <header className='flex justify-between items-center px-3 max-w-6xl mx-auto '>
             <div>
-                < img src= " " alt="GLOBAL ESTATE" className="h-5 cursor-pointer" onClick={()=>navigate("/")} />
+                < img src= "logo3.png" alt="GLOBAL ESTATE" className= "h-12 cursor-pointer" onClick={()=>navigate("/")} />
             </div>
             <div>
                 <ul className='flex space-x-10'>
