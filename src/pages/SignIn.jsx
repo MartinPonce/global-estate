@@ -33,7 +33,7 @@ export default function SignIn() {
         navigate("/")
       }
     } catch (error) {
-      toast.error("Malas credenciales de usuario");
+      toast.error("Datos incorrectos de usuario");
     }
   }
   return (
