@@ -19,7 +19,7 @@ export default function Header() {
     <div className='bg-white border-b shadow-md sticky top-0 z-50'>
         <header className='flex justify-between items-center px-3 max-w-6xl mx-auto '>
             <div>
-                < img src= "logo3.png" alt="GLOBAL ESTATE" className= "h-12 cursor-pointer" onClick={()=>navigate("/")} />
+                < img src= "logo4.png" alt="GLOBAL ESTATE" className= "h-12 cursor-pointer" onClick={()=>navigate("/")} />
             </div>
             <div>
                 <ul className='flex space-x-10'>
