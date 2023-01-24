@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Spinner from '../components/Spinner';
 import { toast } from "react-toastify";
 import { getStorage, ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
-import { getAuth } from "firebase/auth"
+import { getAuth } from "firebase/auth";
 import { v4 as uuidv4 } from "uuid";
 import { addDoc, collection, serverTimestamp } from "firebase/firestore";
 import { db } from "../firebase";
@@ -150,14 +150,15 @@ export default function CreateListing() {
             ...formData,
             imgUrls,
             geolocation,
-            timestamp: serverTimestamp()
+            timestamp: serverTimestamp(),
+            userRef: auth.currentUser.uid,
         };
         delete formDataCopy.images;
         !formDataCopy.offer && delete formDataCopy.discountedPrice;
         delete formDataCopy.latitude;
         delete formDataCopy.longitude;
         const docRef = await addDoc(collection(db, "listings"), formDataCopy);       // LISTINGS   LISTADOS
-        setLoading(false)
+        setLoading(false);
         toast.success("Anuncio creado");
         navigate(`/category/${formDataCopy.type}/${docRef.id}`);
         }
