@@ -11,7 +11,7 @@ export default function ListingItem({ listing, id, onEdit, onDelete }) {
             <Link className="contents" to={`/category/${listing.type}/${id}`}>
                 <img   
                     className="h-[170px] w-full object-cover hover:scale-105 transition-scale duration-200 ease-in"
-                    loading="lazy" 
+                    loading="lazy" alt= ""
                     src={listing.imgUrls[0]} 
                 />
                 <Moment 

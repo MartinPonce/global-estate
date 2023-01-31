@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react';
 import Spinner from '../components/Spinner';
 import { toast } from "react-toastify";
 import { getStorage, ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
@@ -7,6 +7,7 @@ import { v4 as uuidv4 } from "uuid";
 import { addDoc, collection, doc, getDoc, serverTimestamp, updateDoc } from "firebase/firestore";
 import { db } from "../firebase";
 import { useNavigate, useParams } from 'react-router-dom';
+import { useEffect } from "react";
 
 export default function CreateListing() {
     const navigate = useNavigate();
