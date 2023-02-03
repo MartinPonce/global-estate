@@ -309,7 +309,7 @@ export default function CreateListing() {
                     id="address" 
                     value={address} 
                     onChange= {onChange} 
-                    placeholder="Direccion del inmueble" 
+                    placeholder="Dirección del inmueble" 
                     required 
                     className="w-full px-4 py-2 text-xl text-gray-700 bg-white border-gray-300 rounded 
                         transition duration-150 ease-in-out focus:text-gray-700 focus:bg-white focus:border-slate-600
