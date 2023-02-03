@@ -243,7 +243,7 @@ export default function CreateListing() {
                         />
                     </div>            
                 </div>
-                <p className="text-lg mt-6 mb-1 font-semibold">Estacionamiento</p>
+                <p className="text-lg mt-6 mb-1 font-semibold">Garage</p>
                 <div className="flex">
                     <button     
                         type="button" 
