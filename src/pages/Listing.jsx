@@ -72,7 +72,7 @@ export default function Listing() {
             </div>
             {shareLinkCopied && (
                 <p className="fixed top-[15%] right-[5%] font-semibold border-2 border-gray-400 rounded-md bg-white z-10 p-2">
-                    Link Copiado
+                    Compartir publicación
                 </p>
             )}   
             <div className="m-4 flex flex-col md:flex-row max-w-6xl lg:mx-auto p-4 rounded-lg shadow-lg bg-white lg:space-x-5">
