@@ -1,5 +1,5 @@
-import { useLocation, useNavigate, } from 'react-router-dom';
 import React, { useEffect, useState } from 'react';
+import { useLocation, useNavigate, } from 'react-router-dom';
 import {getAuth, onAuthStateChanged} from "firebase/auth";
 
 
@@ -33,13 +33,13 @@ export default function Header() {
                 <ul className='flex space-x-10'>
                   <li 
                     className={`cursor-pointer py-3 text-sm font-semibold text-gray-400 border-b-[4px] 
-                    border-b-transparent ${pathMatchRoute("/home") && "text-black border-b-red-500"}`}
-                    onClick={()=>navigate("/home")} >Inicio
+                    border-b-transparent ${pathMatchRoute("/") && "text-black border-b-red-500"}`}
+                    onClick={() => navigate("/")} >Inicio
                   </li>
                   <li   
                     className={`cursor-pointer py-3 text-sm font-semibold text-gray-400 border-b-[4px] 
                     border-b-transparent ${pathMatchRoute("/offers") && "text-black border-b-red-500"}`}
-                    onClick={()=>navigate("/offers")} >Ofertas
+                    onClick={() => navigate("/offers")} >Ofertas
                   </li>
                   <li 
                     className={`cursor-pointer py-3 text-sm font-semibold text-gray-400 border-b-[4px] 
