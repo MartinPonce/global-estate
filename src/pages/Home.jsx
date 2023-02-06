@@ -62,7 +62,7 @@ export default function Home() {
     }
     fetchListings()
   },[])
-  // Places for Rent    Propiedades en alquiler
+  // Places for Sale    Propiedades en Venta
   const [saleListings, setSaleListings] = useState(null)
   useEffect(() => {
     async function fetchListings(){
